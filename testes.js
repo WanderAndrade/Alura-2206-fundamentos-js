@@ -1,20 +1,13 @@
-/*
-var altura = 3;
-var comprimento = 7;
-area = altura * comprimento;
+let listaFuncionarios = ['José', 'Ana', 'Luiza', 'Wander']
+let listaIdades = [22,19,33,57]
 
-console.log (area);
-var area;
-console.log(area);
-*/
-let area = 0;
-let forma = 'retângulo';
-let altura = 3;
-let comprimento = 7;
-
-if (forma == 'retângulo') {
-    area = altura * comprimento;
-} else {
-    area = altura * comprimento / 2;
+const exibeLista = (lista, descricao) => {
+    e = ''
+        for (let i = 0; i < lista.length; i++){
+            e += '\n'+ descricao + lista [i]
+        }
+    return e
 }
-console.log (area);
+
+console.log(exibeLista(listaFuncionarios, 'Funcionário: '))
+console.log(exibeLista(listaIdades, "Idades: "))
