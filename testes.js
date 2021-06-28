@@ -1,16 +1,20 @@
-const idade	= 2;
-const nome	= "Lara";
-const sobrenome = "Ayumi";
-const bacharel	= false;
-const dezAnosDepois = "12";
+/*
+var altura = 3;
+var comprimento = 7;
+area = altura * comprimento;
 
-const nomeCompleto = nome + sobrenome;
+console.log (area);
+var area;
+console.log(area);
+*/
+let area = 0;
+let forma = 'retângulo';
+let altura = 3;
+let comprimento = 7;
 
-console.log(nomeCompleto);
-console.log(bacharel == 0);
-const minhaVar = 1;
-const MinhaVar = "texto";
-const minhavar = "3";
-const MINHAVAR = 2;
-
-console.log(minhaVar, MinhaVar, minhavar, MINHAVAR)
+if (forma == 'retângulo') {
+    area = altura * comprimento;
+} else {
+    area = altura * comprimento / 2;
+}
+console.log (area);
